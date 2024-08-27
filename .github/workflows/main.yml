@@ -6,31 +6,31 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
 
     steps:
       - name: Checkout Source
         uses: actions/checkout@v3
 
-      # - name: Login to Docker Hub
-      #   run: docker login -u ${{ secrets.DOCKER_USERNAME }} --p ${{ secrets.DOCKER_PASSWORD }}
+      - name: Login to Docker Hub
+        run: docker login -u ${{ secrets.DOCKER_USERNAME }} --p ${{ secrets.DOCKER_PASSWORD }}
 
-      # - name: Build Docker Image
-      #   run: docker build -t rjshkhoksi26/aiagent .
+      - name: Build Docker Image
+        run: docker build -t rjshkhoksi26/aiagent .
 
-      # - name: Publish Image to Docker Hub
-      #   run: docker push rjshkhoksi26/aiagent:latest
+      - name: Publish Image to Docker Hub
+        run: docker push rjshkhoksi26/aiagent:latest
 
-  # deploy:
-  #   needs: build
-  #   runs-on: ubuntu-latest
+  deploy:
+    needs: build
+    runs-on: self-hosted
 
-  #   steps:
-  #     - name: Pull Image from Docker Hub
-  #       run: docker pull rjshkhoksi26/aiagent:latest
+    steps:
+      - name: Pull Image from Docker Hub
+        run: docker pull rjshkhoksi26/aiagent:latest
 
-  #     - name: Delete Old Container
-  #       run: docker rm -f reactContainer || true
+      - name: Delete Old Container
+        run: docker rm -f reactContainer || true
 
-  #     - name: Run Docker Container
-  #       run: docker run -d -p 3000:80 --name reactContainer rjshkhoksi26/aiagent:latest
+      - name: Run Docker Container
+        run: docker run -d -p 3000:80 --name reactContainer rjshkhoksi26/aiagent:latest
