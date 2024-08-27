@@ -26,9 +26,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Pull image from docker hub
-        run: docker pull rjshkhoksi26/aiagent
-      - name: Delete old container
-        run: docker rm -f reactContainer
-      - name: Run docker container
-        run: docker run -d -p 3000:80 --name reactContainer rjshkhoksi26/aiagent
+      - name: Pull Image from Docker Hub
+        run: docker pull rjshkhoksi26/aiagent:latest
+
+      - name: Delete Old Container
+        run: docker rm -f reactContainer || true
+
+      - name: Run Docker Container
+        run: docker run -d -p 3000:80 --name reactContainer rjshkhoksi26/aiagent:latest
