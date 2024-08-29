@@ -2,7 +2,7 @@ name: CICD
 on:
   push:
     branches:
-      - ec2_server
+      - main
 
 jobs:
   build:
