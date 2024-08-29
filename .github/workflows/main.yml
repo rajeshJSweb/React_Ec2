@@ -14,9 +14,10 @@ jobs:
 
       - name: Log in to Docker Hub
         run: echo "${{ secrets.DOCKER_PASSWORD }}" | sudo docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
-      
-      - name: Build Docker Image
-        run: docker build -t rjshkhoksi26/aiagent .
+
+      - name: Build Docker image
+        run: sudo docker build -t rjshkhoksi26/aiagent .
+
 
       - name: Publish Image to Docker Hub
         run: docker push rjshkhoksi26/aiagent:latest
