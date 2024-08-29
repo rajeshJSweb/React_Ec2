@@ -1,17 +1,18 @@
 import React, { useEffect, useState } from 'react';
 // eslint-disable-next-line import/no-extraneous-dependencies
+import { ConfigProvider } from 'antd';
+import 'antd/dist/antd.less';
 import { hot } from 'react-hot-loader/root';
 import { Provider, useSelector } from 'react-redux';
+import { Redirect, Route, BrowserRouter as Router } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
-import { BrowserRouter as Router, Redirect, Route } from 'react-router-dom';
-import { ConfigProvider } from 'antd';
+import ProtectedRoute from './components/utilities/protectedRoute';
+import config from './config/config';
 import store from './redux/store';
 import Admin from './routes/admin';
 import Auth from './routes/auth';
 import './static/css/style.css';
-import config from './config/config';
-import ProtectedRoute from './components/utilities/protectedRoute';
-import 'antd/dist/antd.less';
+
 
 const { theme } = config;
 
