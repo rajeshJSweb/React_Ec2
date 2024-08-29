@@ -1,6 +1,6 @@
 
 # Step 1
-FROM node:alpine3.18 as build
+FROM node:22-alpine3.19 as build
 WORKDIR /app
 COPY package.json .
 RUN yarn install

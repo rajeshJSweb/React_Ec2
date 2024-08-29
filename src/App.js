@@ -13,7 +13,6 @@ import Admin from './routes/admin';
 import Auth from './routes/auth';
 import './static/css/style.css';
 
-
 const { theme } = config;
 
 function ProviderConfig() {
