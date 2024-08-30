@@ -27,6 +27,7 @@ function ProviderConfig() {
 
   const [path, setPath] = useState(window.location.pathname);
 
+  
   useEffect(() => {
     let unmounted = false;
     if (!unmounted) {
