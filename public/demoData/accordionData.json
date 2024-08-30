@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "title": "What Home Services Does Servicemen Offer?",
+    "content": "Helping offers a wide range of services, including cleaning services, plumbing service, electric service, elderly care, appliance repair, handyman services, plumbing, aircon servicing and more."
+  },
+  {
+    "id": 2,
+    "title": "What Payment Methods Are Accepted?",
+    "content": "We accept various payment methods, including credit cards, debit cards, online bank transfers, and popular digital wallets."
+  },
+  {
+    "id": 3,
+    "title": "How Can I Contact Servicemen?",
+    "content": "You can contact us through our customer service hotline, email, or by visiting our official website and using the contact form."
+  },
+  {
+    "id": 4,
+    "title": "What If I Am Not Satisfied with the Service?",
+    "content": "If you are not satisfied with our service, please contact our customer service team, and we will do our best to resolve the issue."
+  },
+  {
+    "id": 5,
+    "title": "What is Servicemen's timing for providing service?",
+    "content": "Our service hours are from 9:00 AM to 6:00 PM, Monday to Saturday. Emergency services are available 24/7."
+  }
+]

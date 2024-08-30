@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "title": "Electrical Services",
+    "description": "Booked by 124 customers",
+    "imageUrl": "/src/static/img/services/electrical_services.png",
+    "detailLink": "/services/electrical-services"
+  },
+  {
+    "id": 2,
+    "title": "Plumbing Services",
+    "description": "Ordered by 327 customers",
+    "imageUrl": "/src/static/img/services/plumbing_services.png",
+    "detailLink": "/services/plumbing-services"
+  },
+  {
+    "id": 3,
+    "title": "Glass Door & Sliding Door Installation",
+    "description": "Ordered by 287 customers",
+    "imageUrl": "/src/static/img/services/glass_door_services.png",
+    "detailLink": "/services/glass-door-installation"
+  },
+  {
+    "id": 4,
+    "title": "Light Installation Service",
+    "description": "Ordered by 134 customers",
+    "imageUrl": "/src/static/img/services/light_installation_services.png",
+    "detailLink": "/services/light-installation"
+  },
+  {
+    "id": 5,
+    "title": "Electrical Services",
+    "description": "Booked by 124 customers",
+    "imageUrl": "/src/static/img/services/electrical_services.png",
+    "detailLink": "/services/electrical-services"
+  },
+  {
+    "id": 6,
+    "title": "Plumbing Services",
+    "description": "Ordered by 327 customers",
+    "imageUrl": "/src/static/img/services/plumbing_services.png",
+    "detailLink": "/services/plumbing-services"
+  },
+  {
+    "id": 7,
+    "title": "Glass Door & Sliding Door Installation",
+    "description": "Ordered by 287 customers",
+    "imageUrl": "/src/static/img/services/glass_door_services.png",
+    "detailLink": "/services/glass-door-installation"
+  },
+  {
+    "id": 8,
+    "title": "Light Installation Service",
+    "description": "Ordered by 134 customers",
+    "imageUrl": "/src/static/img/services/light_installation_services.png",
+    "detailLink": "/services/light-installation"
+  },
+  {
+    "id": 9,
+    "title": "Electrical Services",
+    "description": "Booked by 124 customers",
+    "imageUrl": "/src/static/img/services/electrical_services.png",
+    "detailLink": "/services/electrical-services"
+  },
+  {
+    "id": 10,
+    "title": "Glass Door & Sliding Door Installation",
+    "description": "Ordered by 287 customers",
+    "imageUrl": "/src/static/img/services/glass_door_services.png",
+    "detailLink": "/services/glass-door-installation"
+  },
+  {
+    "id": 11,
+    "title": "Light Installation Service",
+    "description": "Ordered by 134 customers",
+    "imageUrl": "/src/static/img/services/light_installation_services.png",
+    "detailLink": "/services/light-installation"
+  },
+  {
+    "id": 12,
+    "title": "Plumbing Services",
+    "description": "Ordered by 327 customers",
+    "imageUrl": "/src/static/img/services/plumbing_services.png",
+    "detailLink": "/services/plumbing-services"
+  }
+]
