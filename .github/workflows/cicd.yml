@@ -1,0 +1,40 @@
+name: CICD
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: self-hosted
+
+    steps:
+      - name: Checkout Source
+        uses: actions/checkout@v3
+
+      - name: Log in to Docker Hub
+        run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
+
+      - name: Build Docker image
+        run: docker build -t rjshkhoksi26/vertex_api_frontend:latest .
+
+      - name: Publish Image to Docker Hub
+        run: docker push rjshkhoksi26/vertex_api_frontend:latest
+
+  deploy:
+    needs: build
+    runs-on: self-hosted
+
+    steps:
+      - name: Log in to Docker Hub
+        run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
+
+      - name: Pull Image from Docker Hub
+        run: docker pull rjshkhoksi26/vertex_api_frontend:latest
+
+      - name: Delete Old Container
+        run: docker rm -f reactContainer || true
+
+      - name: Run Docker Container
+        run: docker run -d -p 3000:80 --name reactContainer rjshkhoksi26/vertex_api_frontend:latest
