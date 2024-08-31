@@ -1,11 +1,11 @@
 # Step 1: Build the React app with Node.js 20 on Alpine
 FROM node:20-alpine as builder
 WORKDIR /app
-COPY package.json yarn.lock ./
+COPY package*.json yarn*.lock ./
 RUN yarn install
 COPY . .
 RUN yarn build
-
+CMD [ "yarn", "start" ]
 
 # Step 2: Serve the React app with Nginx
 FROM nginx:1.23-alpine
