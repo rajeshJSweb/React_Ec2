@@ -7,6 +7,7 @@ COPY . .
 RUN yarn build
 CMD [ "yarn", "start" ]
 
+
 # Step 2: Serve the React app with Nginx
 FROM nginx:1.23-alpine
 WORKDIR /usr/share/nginx/html
