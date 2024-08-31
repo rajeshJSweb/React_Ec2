@@ -4,8 +4,8 @@
  * could be done from here without refactoring on multiple places throughout the app
  */
 
-const rootAPI = 'http://localhost:8080'
-// const rootAPI = 'http://51.79.74.33:8080'
+// const rootAPI = 'http://localhost:8080'
+const rootAPI = 'http://51.79.74.33:8080'
 // const rootAPI = 'https://api.thefurne.com'
 
 const API = {
