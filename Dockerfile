@@ -1,5 +1,5 @@
 # Step 1: Build the React app
-FROM node:16-alpine as builder
+FROM node:22-alpine3.19 as builder
 WORKDIR /app
 COPY package.json yarn.lock ./
 RUN yarn install
