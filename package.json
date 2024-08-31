@@ -100,6 +100,7 @@
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.18.9",
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@craco/craco": "^6.4.3",
     "airbnb": "^0.0.2",
     "browserify": "^17.0.0",
